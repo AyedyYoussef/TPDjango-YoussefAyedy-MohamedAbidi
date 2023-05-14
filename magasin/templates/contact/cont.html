@@ -1,0 +1,18 @@
+{% extends 'magasin/base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Contact</h1>
+    <form method="post" action=".">
+      {% csrf_token %}
+
+      {{form.as_p }}
+      <button> submit</button>
+    </form>
+  </body>
+</html>
+  {% endblock %}
+
+  
